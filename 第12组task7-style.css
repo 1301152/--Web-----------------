@@ -1,39 +1,48 @@
 /* CSS Document */
 
+<!--以下是级联样式表，是用来进行网页风格设计的，通过设立样式表，
+可以统一的控制HTML中个标志的显示属性。下面是一些对应的类选择器的属性设置-->
 body{
   padding:0;
 	margin:0;
-	background:url(images/body_bg.gif) 0 0 repeat-x #fff;
+	background:url(images/body_bg.gif) 0 0 repeat-x #fff;  /*背景颜色*/
 	font-family:Arial, Helvetica, sans-serif;
 	color:#5C5C5C;
 }
+/*在我们使用选择器的时候，有些标签样式是一样的，或者某些标签都有共同的样式
+属性，我们可以将这些标签集体声明，不同的标签用“,”分开,下面这些便是这种用法，
+因为样式表中的一些用法很相似，这里指出一些常用的属性注释，其他相同的注释缺省。
+*/
 div, h1, h2, h3, h4, p, form, label, input, textarea, img, span{
 	margin:0; padding:0;
 }
 
+
 ul{
-	margin:0; 
-	padding:0; 
-	list-style-type:none;
+	margin:0;      /*设置所有外边距属性*/
+	padding:0;      /*设置所有内边距属性*/
+	list-style-type:none;    
 	font-size:0;
 }
-.spacer{
+.spacer{           /*类选择器*/
 	clear:both; 
-	font-size:0; 
-	line-height:0;
+	font-size:0;    /*字体大小*/
+	line-height:0;  /*给一行内容的高度设定范围*/
 }
 /*------------------------------------------------body--------------------*/
 
+
 /*------------------------------------------------main--------------------*/
+/*带#的都是ID选择器*/
 #main{
-	width:972px;
+	width:972px;     /*宽度*/
 	margin:0 auto;
 	padding:0 0 32px 0;
 }
 /*------------------------------------------------left--------------------*/
 #left{
 	width:247px;
-	float:left;
+	float:left;        /*浮动*/
 }
 #left img{
 	display:block; font-size:0; line-height:0;
@@ -48,7 +57,7 @@ ul{
 	width:216px;
 }
 #left ul li{
-	border-bottom:#D2D5D5 solid 1px;
+	border-bottom:#D2D5D5 solid 1px;    /*边框的设置*/
 	padding:0 0 8px 0;
 	margin:0 0 8px 0;
 }
@@ -205,6 +214,7 @@ ul{
 	background:url(images/xhtml_valid_hover.gif) 0 0 no-repeat;
 }
 /*------------------------------------------------left--------------------*/
+
 
 /*------------------------------------------------right--------------------*/
 #right{
@@ -376,7 +386,8 @@ ul{
 	height:55px;
 	background:url(images/why_best.gif) 0 0 repeat-x;
 	float:left;
-	
+
+
 }
 #best h2 span{
 	width:220px;
@@ -543,8 +554,10 @@ ul{
 	margin:0 0 13px 13px;
 	display:block;
 	width:135px;
-	
-	
+
+
+
+
 }
 #last a.plan:hover{
 	color:#000;
@@ -560,7 +573,10 @@ ul{
 /*------------------------------------------------right--------------------*/
 
 
+
+
 /*------------------------------------------------main--------------------*/
+
 
 /*------------------------------------------------footer--------------------*/
 #footerMain{
