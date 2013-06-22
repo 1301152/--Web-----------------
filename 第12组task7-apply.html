@@ -1,26 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!--这一部分做的是apply网页，设置了该网页的名字：<title>高校社团信息发布平台-查看社团申请（系统管理员）</title>；分出了一个“社团信息发布平台”的块：innerstyle.css-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>高校社团信息发布平台-查看社团申请（系统管理员）</title>
 <link href="innerstyle.css" rel="stylesheet" type="text/css" />
 </head>
+<!--这是剩下板块的设计-->
 <body>
 <!--main start -->
 <div id="main">
 <!--left panel start -->
 <div id="left">
 <a href="index.htm"><img src="images/logo1.jpg" alt="社团信息发布平台" width="247" height="97" border="0" class="logo" /></a>
+<!--这是用户名、用户权限的片段，插入了一张图片，放置在网页的中间位置-->
 <p align="center"><img src="20130621031316224_easyicon_net_256.png" width="102" height="108" /></p>
 <p align="center">
   <strong>   用户名</strong>：<span class="STYLE4">Administrator</span></p>
   <p align="center"><strong>用户权限</strong>：<span class="STYLE4">系统管理员</span></p>
+  <!--下面这是活动搜索的部分，采用表格实现，输入要搜索的活动名称，然后进行搜索。-->
 <form name="newsletter" action=" " method="post">
-<h2>搜索活动信息</h2>
-<input type="text" name="text" value="" />
-<input type="submit" name="submit" value="" class="signup" />
+<h2>搜索活动信息</h2><!--这里的字体采用的是h2标签-->
+<input type="text" name="text" value="" /><!--输入采用的是文本框的形式-->
+<input type="submit" name="submit" value="" class="signup" /><!--这是提交按钮，采用的是signup.css样式-->
 </form>
-<h2 class="faq"><span><b>留言</b><span class="STYLE3">和</span> <b>建议</b></span></h2>
+<h2 class="faq"><span><b>留言</b><span class="STYLE3">和</span> <b>建议</b></span></h2><!--这里采用了span标签，其作用有别于div，在没有浮动的情况下是同一行显示的，因为这里采用的是faq.css的样式，没有出现浮动，所以网页呈现出来的效果是“留言和建议”是在同一行显示。-->
 <p class="lftTxt"><span class="green">点此并留下您宝贵的建议和意见，我们将尽快作出回复</span>DQ：求DOTA校内联赛！！！</p>
 <img src="xidianxiaohui(1).jpg" alt="call us" width="209" height="107" />
 <ul class="botLink">
@@ -33,6 +37,7 @@
 <!--right panel start -->
 <div id="right">
 <ul class="nav">
+<!--下面这些是超链接，可以连接到其他不同的网页，实现静态页面之间的切换，不同的页面使用了其对应的样式。-->
 <li><a href="index.htm" class="hover">&#20027;&#39029;</a></li>
 <li><a href="inner-page.html" class="navLink">更多信息</a></li>
 <li><a href="apply.html" class="navLink">&#31038;&#22242;</a></li>
@@ -57,6 +62,7 @@
 <h2><span>社团加入申请</span></h2>
 <p class="bestTxt">暂无社团申请
 </p>
+
 
 <p class="bestTxt3"><a href=" "></a></p>
 <br class="spacer" />
@@ -92,3 +98,5 @@
 <!--footerMain end -->
 </body>
 </html>
+
+
